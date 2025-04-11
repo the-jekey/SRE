@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Shree Ram Enterprises</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="website icon" type="png" href="img/SRE LOGO.png" /><link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  </head>
+  <body>
+    <footer>
+      <div class="footer">
+          <div class="footer-part-1">
+              <h1>Get in touch</h1>
+              <h1>Let's talk</h1>
+          </div>
+          <div class="footer-part-2">
+              <div class="foot-part-1">
+                <a href="tel:9929538820"> <h1>+91 9929538820</h1></a>
+              </a>
+                <a href="mailto:sretinwari@gmail.com"> <h1>sretinwari@gmail.com</h1></a>
+              </a>
+                 <a href="https://www.google.com/maps/place/Shree+Ram+Enterprises/@26.5650972,72.8675477,189m/data=!3m1!1e3!4m6!3m5!1s0x3941a3397297d97f:0x5126d0e5aad1efdd!8m2!3d26.565097!4d72.8679855!16s%2Fg%2F11sqk8wk47?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank"> <h1>Opp. Ramdev Cotton Mill, Ghewda Road,
+                      Tinwari, <br>
+                      Jodhpur 342306, Rajasthan</h1></a>
+              </div>
+              <div class="foot-part-2">
+                  <div class="links-1">
+                      <a href="index.html"><h1>Home</h1></a>
+                      <a href="about.html"><h1>About us </h1></a>
+                     <a href="contact.html"> <h1>Contact</h1></a>
+                  </div>
+                  <div class="links-2">
+                      <a href="#"><h1>Shipping policy</h1></a>
+                      <a href="#"><h1>Return & Refund policy</h1></a>
+                      <a href="#"><h1>Terms and conditions</h1></a>
+                  </div>
+                  <div class="mailbox">
+                      <form>
+                          <input type="email"
+                              placeholder="Enter your email"
+                              required>
+                          <button
+                              type="submit">Subscribe</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+
+          <div class="footer-part-3">
+              <div class="social-media">
+                  <a href="https://www.instagram.com/sre.org.in/" target="_blank"><div class="instagram">
+                      <i class="ri-instagram-line"></i>
+                      <i class="ri-arrow-right-up-line"></i>
+                  </div></a>
+                  <a href="https://www.facebook.com/sre.org.in" target="_blank"><div class="facebook">
+                      <i class="ri-facebook-circle-line"></i>
+                      <i class="ri-arrow-right-up-line"></i>
+                  </div></a>
+                  <a href="https://wa.me/9929538820" target="_blank"><div class="whatsapp">
+                      <i class="ri-whatsapp-line"></i>
+                      <i class="ri-arrow-right-up-line"></i>
+                  </div></a>
+              </div>
+          </div>
+          <div class="footer-part-4">
+              <h4>Copyright © 2025 Shree Ram Enterprises |
+                  crafted by <a href="https://www.instagram.com/the_jekeyy/" target="_blank">jekey</a></h4>
+          </div>
+      </div>
+  </div>
+</footer>
+</footer>
+
+
+<script>
+           document.addEventListener('DOMContentLoaded', () => {
+        // Animate the entire footer container
+        // gsap.from(".footer", {
+        //     duration: 1.5,
+        //     opacity: 0, 
+        //     y: 50, 
+        //     ease: "power3.out",
+        // });
+    
+        // Animate the "Get in touch" and "Let's talk" headings
+        gsap.from(".footer-part-1 h1", {
+            duration: 1.5,
+            y: -50, // Move from above
+            opacity: 0, // Start with no opacity
+            ease: "power3.out", // Smooth easing
+            stagger: 0.3, // Delay between each heading
+        });
+    
+        // Animate the contact details (phone, email, address)
+        gsap.from(".foot-part-1 h1", {
+            duration: 1.5,
+            x: -100, // Move from the left
+            opacity: 0, // Start with no opacity
+            ease: "power3.out", // Smooth easing
+            stagger: 0.2, // Delay between each item
+        });
+    
+        // Animate the footer links
+        gsap.from(".links-1 a, .links-2 a", {
+            duration: 1.5,
+            y: 50, // Move from below
+            opacity: 0, // Start with no opacity
+            ease: "power3.out", // Smooth easing
+            stagger: 0.3, // Delay between each link
+        });
+    
+        // Animate the mailbox (email subscription form)
+        gsap.from(".mailbox", {
+            duration: 1.5,
+            scale: 0.8, // Start smaller
+            opacity: 0, // Start with no opacity
+            ease: "back.out(1.7)", // Back easing for a bounce effect
+            delay: 0.5, // Delay the animation
+        });
+    
+        // Animate the social media icons
+        gsap.from(".social-media div", {
+            duration: 1.5,
+            scale: 0, // Start with no size
+            opacity: 0, // Start with no opacity
+            ease: "back.out(1.7)", // Back easing for a bounce effect
+            stagger: 0.3, // Delay between each icon
+        });
+    
+        // Animate the copyright text
+        gsap.from(".footer-part-4 h4", {
+            duration: 1.5,
+            opacity: 0, // Start with no opacity
+            y: 20, // Move from below
+            ease: "power3.out", // Smooth easing
+            delay: 1, // Delay the animation
+        });
+    });
+</script>
+    </body>
+  </html>
